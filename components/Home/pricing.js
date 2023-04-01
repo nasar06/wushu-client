@@ -47,7 +47,6 @@ const Pricing = () => {
                 </a>
               </div>
             </div>
-
             <div className="md:flex md:flex-col md:justify-between md:p-8 md:border md:border-gray-300 md:rounded-lg mt-10 md:mt-0">
               <div>
                 <h3 className="text-2xl leading-6 font-medium text-gray-900">Premium</h3>

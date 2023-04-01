@@ -11,7 +11,8 @@ import TeamMember from '@/components/Home/TeamMember';
 import Pricing from '@/components/Home/Pricing';
 import WhatWeDo from '@/components/Home/WhatWeDo';
 import Gallery from '@/components/Home/Gallery';
-const Video = dynamic(() => import('@/components/Home/Video'), { ssr: false })
+import VideoTag from '@/components/Home/VideoTag'
+const Video = dynamic(() => import('@/components/Others/Video'), { ssr: false })
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -29,9 +30,10 @@ export default function Home() {
       <About />
       <TeamMember />
       <WhatWeDo />
+      <VideoTag />
       <Pricing />
       <Gallery />
-      <Video />
+      {/* <Video /> */}
       <Contact />
     </>
   )
