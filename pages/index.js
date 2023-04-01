@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
@@ -10,6 +11,7 @@ import TeamMember from '@/components/Home/TeamMember';
 import Pricing from '@/components/Home/Pricing';
 import WhatWeDo from '@/components/Home/WhatWeDo';
 import Gallery from '@/components/Home/Gallery';
+const Video = dynamic(() => import('@/components/Home/Video'), { ssr: false })
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -29,6 +31,7 @@ export default function Home() {
       <WhatWeDo />
       <Pricing />
       <Gallery />
+      <Video />
       <Contact />
     </>
   )
