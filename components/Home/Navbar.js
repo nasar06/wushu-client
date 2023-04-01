@@ -85,13 +85,13 @@ const Navbar = () => {
                         </div>
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
-                                <Link href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                <Link href="/" className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                                     Home
                                 </Link>
-                                <Link href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                <Link href="/about" className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                                     About
                                 </Link>
-                                <Link href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                <Link href="/contact" className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                                     Contact
                                 </Link>
                             </div>
@@ -99,18 +99,28 @@ const Navbar = () => {
                     </div>
                     <div className="hidden sm:block">
                         <div className="flex items-center">
-                            <Link
+                            
+                            <Link href="/" className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                    Home
+                                </Link>
+                                <Link href="/about" className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                    About
+                                </Link>
+                                <Link href="/contact" className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                                    Contact
+                                </Link>
+                                <Link
                                 href="#"
-                                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                             >
                                 Login
                             </Link>
-                            <Link
+                            {/* <Link
                                 href="#"
-                                className="ml-4 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                className="ml-4 text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                             >
                                 Sign up
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                     <div className="-mr-2 flex items-center sm:hidden">
@@ -164,13 +174,13 @@ const Navbar = () => {
                 menuOpen &&
             <div className="sm:hidden" id={menuOpen? "mobile-menu" : ""}>
                 <div className="px-2 pt-2 pb-3 space-y-1">
-                    <Link href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <Link href="/" className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                         Home
                     </Link>
-                    <Link href="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <Link href="/about" className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                         About
                     </Link>
-                    <Link href="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <Link href="/contact" className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                         Contact
                     </Link>
                 </div>
